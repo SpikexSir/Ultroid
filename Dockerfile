@@ -15,7 +15,7 @@ RUN bash installer.sh
 
 
 # changing workdir
-WORKDIR "/root/TeamUltroid"
+WORKDIR "/maruf"
 RUN apt install wget -y
 RUN apt install neofetch -y;neofetch --stdout;cd /root/.config/neofetch;rm config.conf;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/c1/config.conf
 
