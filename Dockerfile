@@ -26,4 +26,6 @@ RUN apt install wkhtmltopdf -y;apt install python -y;pip install --upgrade pip
 
 RUN git clone https://github.com/SpikexSir/Ultroid;cd Ultr*;wget -O .env https://gist.githubusercontent.com/rooted-cyber/5eb488574cc7aa55fb6daf0f9f178975/raw/myy;pip3 install -r req*;pip3 install -r res*/sta*/opt*;bash sta*
 # start the bot.
+
+
 CMD ["bash", "startup"]
