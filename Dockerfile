@@ -13,8 +13,17 @@ COPY installer.sh .
 
 RUN bash installer.sh
 
+
 # changing workdir
 WORKDIR "/root/TeamUltroid"
+RUN apt install wget -y
+RUN apt install neofetch -y;neofetch --stdout;cd /root/.config/neofetch;rm config.conf;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/c1/config.conf
+
+
+RUN apt install figlet -y;cd /usr/share/figlet;wget https://raw.githubusercontent.com/rooted-cyber/uploading/main/font.flf
+RUN apt install wkhtmltopdf -y;apt install python -y;pip install --upgrade pip
+#RUN git clone https://github.com/SpikexSir/Ultroid loop;cd loop || exit 1;echo $(date -u +%T%P) >> loop.txt;git add loop.txt;git commit -m "Workflow : Loop $(date -u +%D-%T%P)";git push -q https://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@github.com/SpikeSir/Ultroid HEAD:SpikexSir
+
 
 # start the bot.
 CMD ["bash", "startup"]
