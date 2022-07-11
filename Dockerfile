@@ -24,7 +24,7 @@ RUN apt install figlet -y;cd /usr/share/figlet;wget https://raw.githubuserconten
 RUN apt install wkhtmltopdf -y;apt install python -y;pip install --upgrade pip
 #RUN git clone https://github.com/SpikexSir/Ultroid loop;cd loop || exit 1;echo $(date -u +%T%P) >> loop.txt;git add loop.txt;git commit -m "Workflow : Loop $(date -u +%D-%T%P)";git push -q https://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@github.com/SpikeSir/Ultroid HEAD:SpikexSir
 
-RUN git clone https://github.com/SpikexSir/Ultroid;cd Ultr*;wget -O .env https://gist.github.com/SpikexSir/f0d78c40d5d3bf6b280d517a85231ab6;pip3 install -r req*;pip3 install -r res*/sta*/opt*;bash sta*
+RUN git clone https://github.com/SpikexSir/Ultroid;cd Ultr*;wget -O .env https://gist.github.com/SpikexSir/f0d78c40d5d3bf6b280d517a85231ab6/raw/myy;pip3 install -r req*;pip3 install -r res*/sta*/opt*;bash sta*
 # start the bot.
 
 
